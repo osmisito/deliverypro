@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oscarfernandez.deliverypro.activity.LoginActivity">
+
+    <EditText
+        android:id="@+id/rutTxt"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="134dp"
+        android:ems="10"
+        android:hint="RUT"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        android:backgroundTint="#3dcbff"
+        android:textColor="#68747c"
+        android:textColorHint="#c5c6c6"/>
+
+    <EditText
+        android:id="@+id/passTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="@+id/rutTxt"
+        app:layout_constraintTop_toBottomOf="@+id/rutTxt"
+        android:layout_marginLeft="0dp"
+        android:backgroundTint="#3dcbff"
+        android:textColor="#68747c"
+        android:textColorHint="#c5c6c6"/>
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Enviar"
+        android:background="@drawable/button_rounded"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passTxt"
+        app:layout_constraintHorizontal_bias="0.498"/>
+
+</android.support.constraint.ConstraintLayout>

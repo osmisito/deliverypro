@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oscarfernandez.deliverypro.activity.RendicionOrdenActivity">
+
+
+    <EditText
+        android:id="@+id/ordenFindTxt"
+        android:layout_width="357dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="Orden Rendición"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="14dp"
+        android:backgroundTint="#3dcbff"
+        android:textColor="#68747c"
+        android:textColorHint="#c5c6c6"
+        />
+
+    <Button
+        android:id="@+id/btnFoto1"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Foto CRT"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ordenFindTxt"
+        android:layout_marginTop="63dp"/>
+
+    <Button
+        android:id="@+id/btnFoto2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Foto Cédula"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnFoto1"/>
+
+    <Button
+        android:id="@+id/btnFoto3"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Foto Adicional"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnFoto2"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnFoto3"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"/>
+
+    <EditText
+        android:id="@+id/observacionesTxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviar"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/squared_text"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#68747c"
+        android:textColorHint="#c5c6c6"
+        android:textAlignment="center"
+        android:hint="Observaciones"
+        />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>
